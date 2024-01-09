@@ -44,6 +44,9 @@ class ViewModel: ObservableObject {
                     withAnimation {
                         fetching.toggle()
                     }
+                    for (index, url) in urls.enumerated() {
+                        dallEImages[index].uiImage = await apiService.loadImage(at: url)
+                    }
                 } catch {
                     print(error.localizedDescription)
                     fetching.toggle()
