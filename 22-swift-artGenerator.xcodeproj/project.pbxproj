@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		64C263BC2B491784009E5666 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263BB2B491784009E5666 /* AppEntry.swift */; };
-		64C263BE2B491784009E5666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263BD2B491784009E5666 /* ContentView.swift */; };
+		64C263BE2B491784009E5666 /* DALLEImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263BD2B491784009E5666 /* DALLEImagesView.swift */; };
 		64C263C02B491788009E5666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C263BF2B491788009E5666 /* Assets.xcassets */; };
 		64C263C42B491788009E5666 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C263C32B491788009E5666 /* Preview Assets.xcassets */; };
 		64C263CB2B4917EF009E5666 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C263CA2B4917EF009E5666 /* Launch Screen.storyboard */; };
-		64C263CF2B4A8179009E5666 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263CE2B4A8179009E5666 /* Model.swift */; };
+		64C263CF2B4A8179009E5666 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263CE2B4A8179009E5666 /* Models.swift */; };
 		64C263D12B4A8D6C009E5666 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263D02B4A8D6C009E5666 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64C263B82B491784009E5666 /* 22-swift-artGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "22-swift-artGenerator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C263BB2B491784009E5666 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
-		64C263BD2B491784009E5666 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64C263BD2B491784009E5666 /* DALLEImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEImagesView.swift; sourceTree = "<group>"; };
 		64C263BF2B491788009E5666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C263C12B491788009E5666 /* _2_swift_artGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _2_swift_artGenerator.entitlements; sourceTree = "<group>"; };
 		64C263C32B491788009E5666 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64C263CA2B4917EF009E5666 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		64C263CC2B491944009E5666 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		64C263CD2B491A46009E5666 /* -2-swift-artGenerator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-2-swift-artGenerator-Info.plist"; sourceTree = SOURCE_ROOT; };
-		64C263CE2B4A8179009E5666 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		64C263CE2B4A8179009E5666 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		64C263D02B4A8D6C009E5666 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,12 +60,12 @@
 		64C263BA2B491784009E5666 /* 22-swift-artGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				64C263CD2B491A46009E5666 /* -2-swift-artGenerator-Info.plist */,
 				64C263BB2B491784009E5666 /* AppEntry.swift */,
-				64C263BD2B491784009E5666 /* ContentView.swift */,
-				64C263CE2B4A8179009E5666 /* Model.swift */,
+				64C263D22B4BA78D009E5666 /* Screens */,
+				64C263D32B4BA7A2009E5666 /* Models */,
 				64C263D02B4A8D6C009E5666 /* APIService.swift */,
 				64C263CC2B491944009E5666 /* Config.xcconfig */,
+				64C263CD2B491A46009E5666 /* -2-swift-artGenerator-Info.plist */,
 				64C263BF2B491788009E5666 /* Assets.xcassets */,
 				64C263CA2B4917EF009E5666 /* Launch Screen.storyboard */,
 				64C263C12B491788009E5666 /* _2_swift_artGenerator.entitlements */,
@@ -80,6 +80,30 @@
 				64C263C32B491788009E5666 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64C263D22B4BA78D009E5666 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				64C263D52B4BA82B009E5666 /* DALLE Images */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		64C263D32B4BA7A2009E5666 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64C263CE2B4A8179009E5666 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64C263D52B4BA82B009E5666 /* DALLE Images */ = {
+			isa = PBXGroup;
+			children = (
+				64C263BD2B491784009E5666 /* DALLEImagesView.swift */,
+			);
+			path = "DALLE Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C263CF2B4A8179009E5666 /* Model.swift in Sources */,
-				64C263BE2B491784009E5666 /* ContentView.swift in Sources */,
+				64C263CF2B4A8179009E5666 /* Models.swift in Sources */,
+				64C263BE2B491784009E5666 /* DALLEImagesView.swift in Sources */,
 				64C263D12B4A8D6C009E5666 /* APIService.swift in Sources */,
 				64C263BC2B491784009E5666 /* AppEntry.swift in Sources */,
 			);
