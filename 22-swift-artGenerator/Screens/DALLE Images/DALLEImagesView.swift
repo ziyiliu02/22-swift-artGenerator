@@ -73,21 +73,32 @@ struct DALLEImagesView: View {
                                 .disabled(vm.prompt.isEmpty)
                                 .buttonStyle(.borderedProminent)
                             }
+                            HStack {
+                                Spacer()
+                                if vm.urls.isEmpty || vm.selectedImage == nil {
+                                    Image("Artist")
+                                }
+                                Spacer()
+                            }
                         }
                     } else {
                         Text(vm.description)
                             .padding()
                         Button("Try another") {
-                            vm.clearProperties()
+                            vm.reset()
                         }
                         .buttonStyle(.borderedProminent)
                     }
                 } else {
                     ProgressView()
                 }
+                if vm.selectedImage == nil && !vm.urls.isEmpty {
+                    Image("Artist")
+                }
                 Spacer()
             }
             .navigationTitle("Art Generator")
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
