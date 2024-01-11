@@ -15,6 +15,15 @@ class ViewModel: ObservableObject {
     @Published var fetching = false
     @Published var selectedImage: UIImage?
     
+    @Published var imageStyle = ImageStyle.none
+    @Published var imageMedium = ImageMedium.none
+    @Published var artist = Artist.none
+    
+    var description: String {
+        let characteristics = imageStyle.description + imageMedium.description + artist.description
+        return prompt + (!characteristics.isEmpty ? "\n- " + characteristics : "")
+    }
+    
     let apiService = APIService()
     
     func clearProperties() {
@@ -26,6 +35,13 @@ class ViewModel: ObservableObject {
         selectedImage = nil 
     }
     
+    func reset() {
+        clearProperties()
+        imageStyle = .none
+        imageMedium = .none
+        artist = .none
+    }
+    
     init() {
         clearProperties()
     }
@@ -35,7 +51,7 @@ class ViewModel: ObservableObject {
         withAnimation {
             fetching.toggle()
         }
-        let generationInput = GenerationInput(prompt: prompt)
+        let generationInput = GenerationInput(prompt: description)
         Task {
             if let data = generationInput.encodedData {
                 do {
