@@ -49,12 +49,34 @@ struct DALLEImagesView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding(.horizontal)
                         
-                        Button("Fetch") {
-                            vm.fetchImages()
+                        Form {
+                            Picker("Style", selection: $vm.imageStyle) {
+                                ForEach(ImageStyle.allCases, id: \.self) { imageStyle in
+                                    Text(imageStyle.rawValue)
+                                }
+                            }
+                            Picker("Image Medium", selection: $vm.imageMedium) {
+                                ForEach(ImageMedium.allCases, id: \.self) { imageMedium in
+                                    Text(imageMedium.rawValue)
+                                }
+                            }
+                            Picker("Artist", selection: $vm.artist) {
+                                ForEach(Artist.allCases, id: \.self) { artist in
+                                    Text(artist.rawValue)
+                                }
+                            }
+                            HStack {
+                                Spacer()
+                                Button("Fetch") {
+                                    vm.fetchImages()
+                                }
+                                .disabled(vm.prompt.isEmpty)
+                                .buttonStyle(.borderedProminent)
+                            }
                         }
-                        .disabled(vm.prompt.isEmpty)
-                        .buttonStyle(.borderedProminent)
                     } else {
+                        Text(vm.description)
+                            .padding()
                         Button("Try another") {
                             vm.clearProperties()
                         }
