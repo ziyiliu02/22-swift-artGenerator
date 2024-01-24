@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		647520722B4F80600014CF8B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647520712B4F80600014CF8B /* Styles.swift */; };
+		64891D912B5F7363006215A5 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64891D902B5F7363006215A5 /* TextFieldClearButton.swift */; };
 		64A9C30F2B4CE27300CCAC97 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9C30E2B4CE27300CCAC97 /* ViewModel.swift */; };
 		64B8F9E52B5E091F00EF9C9E /* FetchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8F9E42B5E091F00EF9C9E /* FetchingView.swift */; };
 		64C263BC2B491784009E5666 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C263BB2B491784009E5666 /* AppEntry.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		647520712B4F80600014CF8B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		64891D902B5F7363006215A5 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		64A9C30E2B4CE27300CCAC97 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		64B8F9E42B5E091F00EF9C9E /* FetchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingView.swift; sourceTree = "<group>"; };
 		64C263B82B491784009E5666 /* 22-swift-artGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "22-swift-artGenerator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 			children = (
 				64C263BD2B491784009E5666 /* DALLEImagesView.swift */,
 				64A9C30E2B4CE27300CCAC97 /* ViewModel.swift */,
+				64891D902B5F7363006215A5 /* TextFieldClearButton.swift */,
 			);
 			path = "DALLE Images";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A9C30F2B4CE27300CCAC97 /* ViewModel.swift in Sources */,
+				64891D912B5F7363006215A5 /* TextFieldClearButton.swift in Sources */,
 				64C263CF2B4A8179009E5666 /* Models.swift in Sources */,
 				64C263BE2B491784009E5666 /* DALLEImagesView.swift in Sources */,
 				647520722B4F80600014CF8B /* Styles.swift in Sources */,

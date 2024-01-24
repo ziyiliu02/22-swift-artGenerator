@@ -46,6 +46,7 @@ struct DALLEImagesView: View {
                         Text("The more descriptive you can be, the better")
                         
                         TextField("Image Description....", text: $vm.prompt, axis: .vertical)
+                            .showClearButton($vm.prompt)
                             .textFieldStyle(.roundedBorder)
                             .padding(.horizontal)
                         
